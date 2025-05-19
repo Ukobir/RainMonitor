@@ -7,7 +7,7 @@ set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 set(PICO_BOARD pico_w CACHE STRING "Board type")
 include(pico_sdk_import.cmake)
-set(FREERTOS_KERNEL_PATH "C:/FreeRTOS-Kernel")
+set(FREERTOS_KERNEL_PATH "C:/FreeRTOS-Kernel") #Altere o caminho que indique o freeRTOS
 include(${FREERTOS_KERNEL_PATH}/portable/ThirdParty/GCC/RP2040/FreeRTOS_Kernel_import.cmake)
 
 project(PiscaLed C CXX ASM)
